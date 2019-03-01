@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeRegistration">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <EditText
+            android:id="@+id/edittext_employee_email_reg"
+            style="@style/EditTextStyle"
+            android:hint="Enter Your Email-ID"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/edittext_employee_password_reg"
+            style="@style/EditTextStyle"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_employee_register"
+            style="@style/ButtonStyle"
+            android:background="@drawable/round_button"
+            android:text="REGISTER" />
+
+        <TextView
+            android:id="@+id/textview_employee_login"
+            android:text="Existing Employee? LOGIN"
+            style="@style/TextStyle" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

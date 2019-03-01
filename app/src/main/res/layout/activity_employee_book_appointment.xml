@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeBookAppointment">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <Spinner
+            android:id="@+id/doctor_type"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center" />
+
+
+        <Spinner
+            android:id="@+id/doctor_name"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/Date"
+            style="@style/EditTextStyle"
+            android:hint="Date"
+            android:inputType="date" />
+
+
+        <EditText
+            android:id="@+id/time"
+            style="@style/EditTextStyle"
+            android:hint="Time"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/EditTextStyle"
+            android:hint="Venue"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/button_book_appointment"
+            style="@style/ButtonStyle"
+            android:background="@drawable/round_button"
+            android:text="Click to Continue"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

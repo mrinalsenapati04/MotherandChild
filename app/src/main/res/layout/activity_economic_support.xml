@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EconomicSupport">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintTop_toTopOf= "parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/button_support"
+            android:text="NGO's Supported "
+            style="@style/TextStyle"/>
+
+        <Spinner
+            android:id="@+id/support_type"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_call_ngo"
+            style="@style/ButtonStyle"
+            android:text="CALL"
+            android:background="@drawable/round_button"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

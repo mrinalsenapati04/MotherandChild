@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "929844816957",
+    "firebase_url": "https://motherandchild-35ccb.firebaseio.com",
+    "project_id": "motherandchild-35ccb",
+    "storage_bucket": "motherandchild-35ccb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929844816957:android:f78108d67d2b7f44",
+        "android_client_info": {
+          "package_name": "com.sih.teamsquadra.motherandchild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929844816957-ugsl1savrpigqo9vmb388jploj8qlu8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sih.teamsquadra.motherandchild",
+            "certificate_hash": "e6bc977f23efe05d9ff1a9622290acb3fd862421"
+          }
+        },
+        {
+          "client_id": "929844816957-ae04vl7dt6d2kqusjk67fibjtj8ktbh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATqWUuCizd5-POn7oWSg171k4jF4CbDr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929844816957-ae04vl7dt6d2kqusjk67fibjtj8ktbh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

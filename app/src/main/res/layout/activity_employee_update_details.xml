@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeUpdateDetails">
+
+    <LinearLayout
+
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <EditText
+        android:id="@+id/edittext_employee_name"
+        style="@style/EditTextStyle"
+        android:hint="Full Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_employeeID"
+        style="@style/EditTextStyle"
+        android:hint="EmployeeID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_employee_age"
+        style="@style/EditTextStyle"
+        android:hint="Age"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_employee_gender"
+        style="@style/EditTextStyle"
+        android:hint="Gender"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_employee_aadhar"
+        style="@style/EditTextStyle"
+        android:hint="aadhar"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edittext_employee_phone"
+        style="@style/EditTextStyle"
+        android:hint="phone"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_employee_update_details_database"
+        style="@style/ButtonStyle"
+        android:text="Update Details"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

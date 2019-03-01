@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorPatientPrescriptions">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextAadhar"
+            style="@style/EditTextStyle"
+            android:hint="Enter Aadhar Number"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:inputType="textPersonName"
+            android:hint="Patient Report Description"
+            style="@style/EditTextStyle" />
+
+
+        <Button
+            android:id="@+id/buttonImage"
+            style="@style/ButtonStyle"
+            android:text="Select Image" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="@style/ButtonStyle"
+            android:text="Upload Image" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

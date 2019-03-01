@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserUpdateDetails">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <EditText
+            android:id="@+id/edittext_user_name"
+            style="@style/EditTextStyle"
+            android:hint="Full Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext_user_address"
+            style="@style/EditTextStyle"
+            android:hint="Address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext_user_age"
+            style="@style/EditTextStyle"
+            android:hint="Age"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext_user_gender"
+            style="@style/EditTextStyle"
+            android:hint="Gender"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittext_user_aadhar"
+            style="@style/EditTextStyle"
+            android:hint="aadhar"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edittext_user_phone"
+            style="@style/EditTextStyle"
+            android:hint="phone"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edittext_user_previousHistory"
+            style="@style/EditTextStyle"
+            android:hint="previous history"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_update_details_database"
+            style="@style/ButtonStyle"
+            android:text="Update Details"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportFacility">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/call_ambulance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Call Ambulance (108)" />
+
+            <RadioButton
+                android:id="@+id/call_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Call Private Drivers" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner_driver_name"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_call_driver"
+            style="@style/ButtonStyle"
+            android:text="CALL" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginDoctor">
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <EditText
+            android:id="@+id/edittext_doctor_email"
+            style="@style/EditTextStyle"
+            android:hint="Enter Your Email-ID"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/edittext_doctor_password"
+            style="@style/EditTextStyle"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_doctorlogin"
+            style="@style/ButtonStyle"
+            android:text="LOGIN" />
+
+        <TextView
+            android:id="@+id/textview_doctorregister"
+            android:text="New Doctor? Register"
+
+            style="@style/TextStyle" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

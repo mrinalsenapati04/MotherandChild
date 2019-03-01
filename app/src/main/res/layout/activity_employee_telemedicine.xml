@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeTelemedicine">
+
+
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintTop_toTopOf= "parent"
+        app:layout_constraintBottom_toBottomOf= "parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+        <Spinner
+            android:id="@+id/doctor_type"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+
+
+
+        <Spinner
+            android:id="@+id/doctor_name"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+
+
+
+        <EditText
+            android:id="@+id/skype_id"
+            style="@style/EditTextStyle"
+            android:hint="Skype Id"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/video_call"
+            style="@style/ButtonStyle"
+            android:text="VIDEO CALL"/>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

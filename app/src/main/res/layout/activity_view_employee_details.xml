@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEmployeeDetails">
+
+    <LinearLayout
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_employee_header"
+            android:text="Employee details: "
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/textview_employee_details"
+            android:text="your details: "
+            android:textSize="16sp"
+            style="@style/TextStyle" />
+
+        <Button
+            android:id="@+id/employee_update_details"
+            style="@style/ButtonStyle"
+            android:text="User Update Details" />
+
+        <Button
+            android:id="@+id/button_employee_back"
+            style="@style/ButtonStyle"
+            android:text="Employee main" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

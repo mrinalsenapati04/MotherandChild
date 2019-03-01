@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeMain">
+
+    <LinearLayout
+
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/employee_welcome"
+            style="@style/TextStyle"
+            android:text="Welcome : " />
+
+        <Button
+            android:id="@+id/employee_view_details"
+            style="@style/ButtonStyle"
+            android:text="View Employee Details" />
+
+
+        <Button
+            android:id="@+id/button_telemedicine"
+            style="@style/ButtonStyle"
+            android:text="Telemedicine" />
+
+        <Button
+            android:id="@+id/button_dr_appointment"
+            style="@style/ButtonStyle"
+            android:text="Book Appointment" />
+
+        <Button
+            android:id="@+id/button_transportation"
+            style="@style/ButtonStyle"
+            android:text="Transport Facility" />
+
+        <Button
+            android:id="@+id/button_economic_support"
+            style="@style/ButtonStyle"
+            android:text="Economic Support" />
+
+        <Button
+            android:id="@+id/employee_logout"
+            style="@style/ButtonStyle"
+            android:background="@drawable/round_button"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

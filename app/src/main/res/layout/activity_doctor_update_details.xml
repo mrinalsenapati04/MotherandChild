@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorUpdateDetails">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <EditText
+        android:id="@+id/edittext_doctor_name"
+        style="@style/EditTextStyle"
+        android:hint="Full Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_type"
+        style="@style/EditTextStyle"
+        android:hint="Type(Speciality)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_age"
+        style="@style/EditTextStyle"
+        android:hint="Age"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_gender"
+        style="@style/EditTextStyle"
+        android:hint="Gender"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_license"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="license no(medical ID)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_phone"
+        style="@style/EditTextStyle"
+        android:hint="phone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_experience"
+        style="@style/EditTextStyle"
+        android:hint="experience"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edittext_doctor_skypeID"
+        style="@style/EditTextStyle"
+        android:hint="Skype ID"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_doctor_update_details_database"
+        style="@style/ButtonStyle"
+        android:background="@drawable/round_button"
+        android:text="Update Details"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

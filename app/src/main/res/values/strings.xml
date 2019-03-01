@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Mother and Child</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+
+
+    <!-- Employee Telemedicine-->
+
+    <string-array name="doctorstype">
+        <item>Select</item>
+        <item>Gynocologist</item>
+        <item>Pediatrician</item>
+    </string-array>
+
+    <string-array name="doctorsname">
+        <item>Select</item>
+        <item>Dr.Rohith</item>
+        <item>Dr.Vivek</item>
+        <item>Dr.Mrinal</item>
+        <item>Dr.Rakesh</item>
+        <item>Dr.Swetha</item>
+        <item>Dr.Likhitha</item>
+    </string-array>
+
+    <string-array name="privatevehicle">
+        <item>Select</item>
+        <item>7000597375</item>
+        <item>8918398210</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Select</item>
+        <item>Mother</item>
+        <item>Child</item>
+    </string-array>
+
+
+    <string-array name="gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="age">
+        <item>Select</item>
+        <item>Below 3months</item>
+        <item>5-10months</item>
+        <item>1-2yrs</item>
+        <item>2-5yrs</item>
+        <item>Above 5yrs</item>
+        <item>Below 30yrs</item>
+        <item>30-35yrs</item>
+        <item>35-40yrs</item>
+        <item>40-45yrs</item>
+
+    </string-array>
+    <string-array name="doctor_age">
+        <item>Select</item>
+        <item>Below 30yrs</item>
+        <item>30-35yrs</item>
+        <item>35-40yrs</item>
+        <item>40-45yrs</item>
+    </string-array>
+
+
+    <string-array name="ngoSupport">
+        <item>Select</item>
+        <item>7000597375</item>
+        <item>8918398210</item>
+
+    </string-array>
+
+
+    <string-array name="employeeName">
+        <item>Select</item>
+        <item>Sayan</item>
+        <item>Alok</item>
+        <item>Prabhat</item>
+        <item>Siddharth</item>
+        <item>Ajay</item>
+        <item>Tukaram</item>
+        <item>Aman</item>
+        <item>Nisha</item>
+
+
+    </string-array>
+
+</resources>

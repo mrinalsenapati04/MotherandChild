@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMain">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/user_welcome"
+            style="@style/TextStyle"
+            android:text="Welcome : " />
+
+        <Button
+            android:id="@+id/user_view_details"
+            style="@style/ButtonStyle"
+            android:text="View User Details" />
+
+
+        <Button
+            android:id="@+id/govt_scheme"
+            style="@style/ButtonStyle"
+            android:text="Government Scheme" />
+
+        <Button
+            android:id="@+id/food_nutrition"
+            style="@style/ButtonStyle"
+            android:text="Food and Nutrition" />
+
+        <Button
+            android:id="@+id/remainders"
+            style="@style/ButtonStyle"
+            android:text="Remainder" />
+
+
+        <Button
+            android:id="@+id/user_logout"
+            style="@style/ButtonStyle"
+            android:background="@drawable/round_button"
+            android:text="Logout" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
