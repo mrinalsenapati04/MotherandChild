@@ -7,42 +7,104 @@
     tools:context=".DoctorMain">
 
     <LinearLayout
-        style="@style/LinearLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
         app:layout_constraintBaseline_toBaselineOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <TextView
             android:id="@+id/doctor_welcome"
-            android:text="Welcome : "
-            style="@style/TextStyle"/>
+            style="@style/TextStyle"
+            android:text="Welcome : " />
 
-        <Button
-            android:id="@+id/doctor_view_details"
-            style="@style/ButtonStyle"
-            android:text="View Doctor Details" />
 
-        <Button
-            android:id="@+id/doctor_telemedicine"
-            style="@style/ButtonStyle"
-            android:text="Doctor Telemedicine" />
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="364dp"
+            android:layout_margin="50dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/confirm_appointments"
-            style="@style/ButtonStyle"
-            android:text="Confirm appointments" />
 
-        <Button
-            android:id="@+id/patients_prescription"
-            style="@style/ButtonStyle"
-            android:text="Patient Prescriptions" />
+            <LinearLayout
+                style="@style/LinearLayoutStyle"
+                android:layout_width="119dp"
+                android:layout_height="362dp">
+
+
+                <ImageButton
+                    android:id="@+id/doctor_view_details"
+                    style="@style/ImageButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    app:srcCompat="@drawable/dd" />
+
+                <TextView
+                    android:id="@+id/text_view_details"
+                    style="@style/TextStyle"
+                    android:text="View doctor details"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/doctor_telemedicine"
+                    style="@style/ImageButtonStyle"
+                    app:srcCompat="@drawable/t" />
+
+                <TextView
+                    android:id="@+id/text_telemedicine"
+                    style="@style/TextStyle"
+                    android:text="Telemedicine"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LinearLayoutStyle"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/confirm_appointments"
+                    style="@style/ImageButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="101dp"
+                    app:srcCompat="@drawable/ca" />
+
+                <TextView
+                    android:id="@+id/text_confirm_appointments"
+                    style="@style/TextStyle"
+                    android:text="Confirm appointments"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/patients_prescription"
+                    style="@style/ImageButtonStyle"
+                    app:srcCompat="@drawable/p"/>
+
+                <TextView
+                    android:id="@+id/text_prescription"
+                    style="@style/TextStyle"
+                    android:text="Patient Prescriptions"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/doctor_logout"
             style="@style/ButtonStyle"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_button"
             android:text="Logout"
-            android:background="@drawable/round_button"/>
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="86dp" />
     </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>

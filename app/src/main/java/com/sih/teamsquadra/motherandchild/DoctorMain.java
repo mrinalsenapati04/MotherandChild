@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,10 +24,10 @@ import org.jetbrains.annotations.NotNull;
 
 public class DoctorMain extends AppCompatActivity implements View.OnClickListener {
     private Button buttonDoctorLogout;
-    private Button buttonDoctorTelemedicine;
-    private Button buttonDoctorConfirmAppointments;
-    private Button buttonDoctorPatientPrescriptions;
-    private Button buttonDoctorViewDetails;
+    private ImageButton imageButtonDoctorTelemedicine;
+    private ImageButton imageButtonDoctorConfirmAppointments;
+    private ImageButton imageButtonDoctorPatientPrescriptions;
+    private ImageButton imageButtonDoctorViewDetails;
     private TextView textViewDoctorWelcome;
 
     private FirebaseDatabase firebaseDatabase;
@@ -87,17 +88,17 @@ public class DoctorMain extends AppCompatActivity implements View.OnClickListene
         buttonDoctorLogout = findViewById(R.id.doctor_logout);
         buttonDoctorLogout.setOnClickListener(this);
 
-        buttonDoctorViewDetails = findViewById(R.id.doctor_view_details);
-        buttonDoctorViewDetails.setOnClickListener(this);
+        imageButtonDoctorViewDetails = findViewById(R.id.doctor_view_details);
+        imageButtonDoctorViewDetails.setOnClickListener(this);
 
-        buttonDoctorConfirmAppointments = findViewById(R.id.confirm_appointments);
-        buttonDoctorConfirmAppointments.setOnClickListener(this);
+        imageButtonDoctorConfirmAppointments = findViewById(R.id.confirm_appointments);
+        imageButtonDoctorConfirmAppointments.setOnClickListener(this);
 
-        buttonDoctorTelemedicine = findViewById(R.id.doctor_telemedicine);
-        buttonDoctorTelemedicine.setOnClickListener(this);
+        imageButtonDoctorTelemedicine = findViewById(R.id.doctor_telemedicine);
+        imageButtonDoctorTelemedicine.setOnClickListener(this);
 
-        buttonDoctorPatientPrescriptions = findViewById(R.id.patients_prescription);
-        buttonDoctorPatientPrescriptions.setOnClickListener(this);
+        imageButtonDoctorPatientPrescriptions = findViewById(R.id.patients_prescription);
+        imageButtonDoctorPatientPrescriptions.setOnClickListener(this);
 
     }
 
@@ -140,13 +141,13 @@ public class DoctorMain extends AppCompatActivity implements View.OnClickListene
             finish();
             startActivity(new Intent(this, MainActivity.class));
 
-        } else if (v == buttonDoctorConfirmAppointments){
+        } else if (v == imageButtonDoctorConfirmAppointments){
             startActivity(new Intent(this, DoctorConfirmAppointments.class));
-        }else if (v == buttonDoctorViewDetails){
+        }else if (v == imageButtonDoctorViewDetails){
             startActivity(new Intent(this, ViewDoctorDetails.class));
-        }else if (v == buttonDoctorTelemedicine){
+        }else if (v == imageButtonDoctorTelemedicine){
             startActivity(new Intent(this, DoctorTelemedicine.class));
-        }else if (v == buttonDoctorPatientPrescriptions){
+        }else if (v == imageButtonDoctorPatientPrescriptions){
             startActivity(new Intent(this, DoctorPatientPrescriptions.class));
         }
     }
