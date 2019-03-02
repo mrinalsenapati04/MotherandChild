@@ -6,4 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".UserFoodAndNutrition">
 
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintTop_toTopOf= "parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/mother_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/m" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/button_mother_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I-trimester"
+                style="@style/ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_mother_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="II-trimester"
+                style="@style/ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_mother_third"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="III-trimester" />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/child_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/m" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_child_first"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0-4mnths" />
+
+                    <Button
+                        android:id="@+id/button_child_second"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4-6mnths" />
+
+                    <Button
+                        android:id="@+id/button_child_third"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6-8mnths" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="70dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_child_fourth"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8-10mnths" />
+
+                    <Button
+                        android:id="@+id/button_child_fifth"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=">1 year"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

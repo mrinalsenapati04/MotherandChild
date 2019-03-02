@@ -86,4 +86,64 @@
 
     </string-array>
 
+    <string name="INAP">
+       It has been launched with an aim to reduce neonatal mortality and stillbirths.\n
+1. Pre_Conception and Antenatal Care Intervention Package:Antenatal screening for Anemia and Hypertensive  disorders of pregnancy.\n\n
+2. Care during Labour and Childbirth.\n\n
+3. Immediate Newborn Care :Interventions to prevent hypothermia,giving Vitamin K supplements at birth.\n\n
+4. Care of healthy newborn:Home visits till six weeks by trained ASHA and Clean postnatal practices.\n
+5. Care of Small and Sick Newborn:Intensive care services (NICU) at regional level for  Assisted ventilation and Surfactant use.\n\n
+6. Care beyond Newborn Survival:Follow up visits of small and low birth weight babies till 2 years of age.
+
+    </string>
+
+    <string name="JSSK">
+        This scheme entitles all pregnant women delivering in public health institutions to absolutely free and no expense delivery including Caesarean section.\n\n
+MOTHER/PREGNANT WOMEN\n\n
+1. Free and cashless  delivery\n
+2. Free C section\n
+3. ree drugs and consumables\n
+4. Free diagnostics\n
+5. Free diet during stay in health institutions\n
+6. Free provision for blood\n
+7. Free transport\n\n
+INFANTS\n\n
+1. Free treatment\n
+2. Free drugs and consumables\n
+3. Free diagnostics\n
+4. Exemption from user charges\n
+5. Free transport\n
+
+
+    </string>
+
+    <string name="HBNC">
+       HBNC through ASHAs has been initiated to improve newborn practices at the community level and early detection and referral of sick newborn babies.\n\n
+1. Essential care of the newborn.\n\n
+2. Examination of the newborn.\n\n
+3. Early recognition of danger sign.\n\n
+4. Counselling of mother for breastfeeding.\n\n
+5. Immunisation.
+
+
+
+    </string>
+
+    <string name="FBNC">
+        It amis at different levels to reduce newborn morbidity and mortality by setting up of Special New Born Care Units (SNCUs), Newborn Stabilization Units (NBSUs) and Newborn Care Corners (NBCCs) atdifferent levels is a thrust area under NHM.\n\n
+1. Kangaroo Mother Care\n
+2. Thermal Protection\n
+3. Resuscitation of the Newborn Baby\n
+    </string>
+
+    <string name="RBSK">
+         RBSK for health screening and early intervention services has been launched to provide comprehensive care to all the children in the age group of 0-18 years in the community.\n\n
+1. Screening at Anganwadi level: \n\nScreening by Mobile Block Health teams for deficiencies, diseases, developmental delays including disability at the
+ Anganwadi centre at least twice a year.\n\n
+2. Screening at Schools:\n\nScreening by Mobile Health teams for deficiencies, diseases, developmental delays including disability, adolescent health at the
+                        local schools at least once a year.\n
+
+
+    </string>
+
 </resources>
