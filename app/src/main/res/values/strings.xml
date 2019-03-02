@@ -146,4 +146,65 @@ INFANTS\n\n
 
     </string>
 
+    <string name="firsttrimester">
+
+
+** Folic acid is an important addition to your diet as it helps sustain and develop the embryo.\n\n
+1.Include foods such as oranges, sweet potatoes, legumes.\n\n
+
+** You will also need calcium, so include .\n\n
+1.Dairy products.\n
+2.Dark and green leafy vegetables, broccoli, asparagus among others.\n\n
+
+** To help you deal with morning sickness, include .\n\n
+1.Soups between meals. \n
+2.Ginger, food rich in carbs and protein.\n\n
+
+** Sugarcane juice is a rich source of nutrients like Vitamin A, magnesium, potassium and iron. It offers instant energy and is an immunity booster.
+        
+
+    </string>
+
+    <string name="secondtrimester">
+        *Add in good fats such as\n\n
+1.Avocado, salmon and fish liver oil in your diet.\n
+2.Foods with iron, meats, whole grain, dried fruits and legumes.\n\n
+
+**During the fifth month, your growing baby will need Vitamin C so include:\n\n
+1.Oranges and tomatoes in your daily diet.\n\n
+
+**By the sixth month,\n\n
+1.Add a lot of protein rich food like lean meat, fish, eggs, tofu. \n
+2.Necessary carbohydrates food such as sweet potatoes, whole wheat pasta, sweet corn, seeds, legumes and nuts, oats.\n\n
+
+**Pregnant women should avoid foods sweetened with refined sugar and opt for fruits with low-glycemic index**
+        
+
+
+    </string>
+
+
+    <string name="thirdtrimester">
+      **For this crucial time, youll need these five nutrients:\n\n
+1.Vitamin C, calcium, magnesium, Omega 3 fatty acids and choline.\n
+2.Fresh fruits (berries, banana, melon etc).\n
+3.Lentils, fresh green salad with radish, tomato, lettuce, beans and chickpeas.\n
+4.Make sure to drink plenty of fluids to stay hydrated.\n
+        
+
+    </string>
+
+    <string name="avoidfood">
+        ***Food to be AVOIDED during pregnancy***\n\n
+1.Fish and Seafood.\n
+2.Papaya.\n
+3.Eggplant or brinjal.\n
+4.Unpasteurized Milk and its Products.\n
+5.Sesame Seeds.\n
+6.Ajinomoto(mainly contained in chinese food/ street food).\n
+7.Pineapple.\n
+8.Refined Flour Products(bread,noodles,pasta,pizza(products made out of maida)).\n
+9.Grapes.
+    </string>
+
 </resources>
