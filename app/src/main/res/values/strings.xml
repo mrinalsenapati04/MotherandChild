@@ -207,4 +207,94 @@ INFANTS\n\n
 9.Grapes.
     </string>
 
+
+    <string name="firstmonthset">
+
+       Breast milk or formula "ONLY"
+
+
+
+
+    </string>
+
+    <string name="secondmonthset">
+
+    1.Breast milk or formula.\n
+    2.Pureed foods and iron-fortified infant cereal if your doctor gives the okay.\n\n
+        #How much per day\n
+
+    1.Begin with about 1 teaspoon pureed food or cereal. Mix cereal with 4 to 5 teaspoons breast milk or formula. (It will be very runny)\n
+    2.Increase to 1 tablespoon of pureed food, or 1 tablespoon of cereal mixed with breast milk or formula, twice a day. If you\'re giving cereal, gradually thicken the consistency by using less liquid.\n
+
+        ##Feeding tips\n
+
+    --->Introduce new foods one at a time. Wait two or three days, if possible, before offering another new food. (Wait three days if your baby or family has a history of allergies.) It\'s also a good idea to write down the foods your baby samples. If she has an adverse reaction,a food log will make it easier to pinpoint the cause.\n
+    --->The order in which you introduce new foods doesn\'t usually matter. Your child\'s doctor can advise you.
+
+
+    </string>
+
+    <string name="thirdmonthset">
+
+    1.Breast milk or formula.\n
+    2.Pureed fruits and vegetables.\n
+    3.Iron-fortified infant cereal.\n
+    4.Pureed meat or tofu.\n
+    5.Pureed beans or legumes.\n
+    6.Unsweetened yogurt.\n\n
+
+##How much per day\n\n
+
+    1.One teaspoon fruit, gradually increased to 2 or 3 tablespoons in four feedings\n
+    2.One teaspoon vegetables, gradually increased to 2 or 3 tablespoons in four feedings\n
+    3.Three to Nine tablespoons cereal in 2 or 3 feedings\n
+
+
+    </string>
+
+    <string name="fourthmonthset">
+
+    1.Breast milk or formula.\n
+    2.Mashed fruits and vegetables.\n
+    3.Pureed meat, fish, or tofu.\n
+    4.Mashed beans or legumes.\n
+    5.Yogurt and soft pasteurized cheese.\n
+    6.Finger food (O-shaped cereal, small pieces of ripe banana, scrambled eggs, well-cooked pieces of potato, cut-up bagels).\n
+    7.Iron-fortified cereal(barley, wheat, oats, mixed cereals).\n\n
+
+##How much per day\n\n
+
+    1.One-fourth to One-third cup dairy (or 1/2 ounce cheese).\n
+    2.One-fourth to Half cup iron-fortified cereal.\n
+    3.Three_fourth to One cup fruit.\n
+    4.Three_fourth to One cup vegetables.\n
+    5.Three to Four tablespoons protein-rich food.\n
+
+
+    </string>
+
+    <string name="fifthmonthset">
+
+    1.Breast milk or formula.\n
+    2.Chopped or bite-size fruits and vegetables.\n
+    3.Yogurt, soft pasteurized cheese, cottage cheese (no cow\'s milk until age 1).\n
+    4.Protein (small bits of meat, poultry, boneless fish, tofu, and well-cooked beans).\n
+    5.Mashed beans or legumes.\n
+    6.Finger food (O-shaped cereal, small pieces of ripe banana, scrambled eggs, well-cooked pasta, cut-up bagels).\n
+    7.Combo foods (macaroni and cheese, casseroles).\n
+    8.Iron-fortified cereal(barley, wheat, oats, mixed cereals).\n\n
+
+##How much per day\n\n
+
+    1.One-third cup dairy (or 1/2 ounce cheese).\n
+    2.One-fourth to Half cup iron-fortified cereal.\n
+    3.Three-fourth to One cup fruit.\n
+    4.Three-fourth to One cup vegetables.\n
+    5.1/8 to 1/4 cup combo foods.\n
+    6.Three to Four tablespoons protein-rich food.\n
+
+
+    </string>
+
+
 </resources>

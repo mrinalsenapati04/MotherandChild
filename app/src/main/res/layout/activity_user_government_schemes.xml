@@ -53,7 +53,15 @@
                         style="@style/ButtonStyle"
                         android:text="Details"
                         android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/round_button"/>
+                    <Button
+                        android:id="@+id/apply_govtscheme_jssk"
+                        style="@style/ButtonStyle"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:text="How to Apply" />
                 </LinearLayout>
 
 
@@ -89,7 +97,16 @@
                         style="@style/ButtonStyle"
                         android:text="Details"
                         android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/round_button"/>
+
+                    <Button
+                        android:id="@+id/apply_govtscheme_fbnc"
+                        style="@style/ButtonStyle"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:text="How to Apply" />
                 </LinearLayout>
 
 
@@ -125,7 +142,15 @@
                         style="@style/ButtonStyle"
                         android:text="Details"
                         android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/round_button"/>
+                    <Button
+                        android:id="@+id/apply_govtscheme_hbnc"
+                        style="@style/ButtonStyle"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:text="How to Apply" />
 
                 </LinearLayout>
 
@@ -160,7 +185,16 @@
                         style="@style/ButtonStyle"
                         android:text="Details"
                         android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/round_button"/>
+
+                    <Button
+                        android:id="@+id/apply_govtscheme_inap"
+                        style="@style/ButtonStyle"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:text="How to Apply" />
                 </LinearLayout>
 
                 </LinearLayout>
@@ -192,9 +226,18 @@
                     <Button
                         android:id="@+id/c5"
                         style="@style/ButtonStyle"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
                         android:text="Details"
-                        android:textColor="#FFFFFF"
-                        android:background="@drawable/round_button"/>
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/apply_govtscheme_rbsk"
+                        style="@style/ButtonStyle"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_button"
+                        android:text="How to Apply"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
 
             </LinearLayout>

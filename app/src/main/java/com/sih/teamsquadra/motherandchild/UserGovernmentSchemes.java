@@ -14,6 +14,12 @@ public class UserGovernmentSchemes extends AppCompatActivity implements View.OnC
     private Button buttonctc4;
     private Button buttonctc5;
 
+    private Button buttonhth1;
+    private Button buttonhth2;
+    private Button buttonhth3;
+    private Button buttonhth4;
+    private Button buttonhth5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +32,24 @@ public class UserGovernmentSchemes extends AppCompatActivity implements View.OnC
         buttonctc4= findViewById(R.id.c4);
         buttonctc5= findViewById(R.id.c5);
 
+        buttonhth1= findViewById(R.id.apply_govtscheme_jssk);
+        buttonhth2= findViewById(R.id.apply_govtscheme_fbnc);
+        buttonhth3= findViewById(R.id.apply_govtscheme_hbnc);
+        buttonhth4= findViewById(R.id.apply_govtscheme_inap);
+        buttonhth5= findViewById(R.id.apply_govtscheme_rbsk);
+
 
         buttonctc1.setOnClickListener(this);
         buttonctc2.setOnClickListener(this);
         buttonctc3.setOnClickListener(this);
         buttonctc5.setOnClickListener(this);
         buttonctc4.setOnClickListener(this);
+
+        buttonhth1.setOnClickListener(this);
+        buttonhth2.setOnClickListener(this);
+        buttonhth3.setOnClickListener(this);
+        buttonhth5.setOnClickListener(this);
+        buttonhth4.setOnClickListener(this);
 
 
 
@@ -53,6 +71,16 @@ public class UserGovernmentSchemes extends AppCompatActivity implements View.OnC
             startActivity(new Intent(this, GovtSchemeINAP.class));
         }else if (v == buttonctc5){
         startActivity(new Intent(this, GovtSchemeRBSK.class));}
+        else if (v == buttonhth1){
+            startActivity(new Intent(this, ApplySchemeJSSK.class));
+        }else if (v == buttonhth2){
+            startActivity(new Intent(this, ApplySchemeFBNC.class));
+        }else if (v == buttonhth3){
+            startActivity(new Intent(this, ApplySchemeHBNC.class));
+        }else if (v == buttonhth4){
+            startActivity(new Intent(this, ApplySchemeINAP.class));
+        }else if (v == buttonhth5){
+            startActivity(new Intent(this, ApplySchemeRBSK.class));}
 
     }
 }
