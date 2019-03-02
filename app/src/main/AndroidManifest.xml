@@ -13,15 +13,53 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Fifthmonthset"
+            android:label=" Above 1 year" />
+        <activity
+            android:name=".Fourthmonthset"
+            android:label="8-10 mnths"/>
+        <activity
+            android:name=".Thirdmonthset"
+            android:label="6-8 mnths"/>
+        <activity
+            android:name=".Secondmonthset"
+            android:label="4-6 mnths"/>
+        <activity
+            android:name=".Firstmonthset"
+            android:label="0-4 mnths"/>
+        <activity
+            android:name=".ThirdTrimester"
+            android:label="III Trimester"/>
+        <activity
+            android:name=".SecondTrimester"
+            android:label="II Trimester"/>
+        <activity
+            android:name=".FirstTrimester"
+            android:label="I trimester"/>
+        <activity
+            android:name=".GovtSchemeRBSK"
+            android:label="RBSK" />
+        <activity
+            android:name=".GovtSchemeINAP"
+            android:label="INAP" />
+        <activity
+            android:name=".GovtSchemeHBNC"
+            android:label="HBNC" />
+        <activity
+            android:name=".GovtSchemeFBNC"
+            android:label="FBNC" />
+        <activity
+            android:name=".GovtSchemeJSSK"
+            android:label="JSSK" />
+        <activity
             android:name=".UserGovernmentSchemes"
-            android:label="User Government Schemes">
-        </activity>
+            android:label="User Government Schemes" />
         <activity
             android:name=".UserFoodAndNutrition"
-            android:label="User Food and Nutrition"/>
+            android:label="User Food and Nutrition" />
         <activity
             android:name=".UserRemainders"
-            android:label="User Remainders"/>
+            android:label="User Remainders" />
         <activity
             android:name=".DoctorPatientPrescriptions"
             android:label="Doctor Patient Prescriptions" />

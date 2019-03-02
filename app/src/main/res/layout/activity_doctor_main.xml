@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:orientation="vertical"
         app:layout_constraintBaseline_toBaselineOf="parent"
@@ -18,79 +18,88 @@
 
         <TextView
             android:id="@+id/doctor_welcome"
-            style="@style/TextStyle"
-            android:text="Welcome : " />
+            android:text="Welcome : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 
         <LinearLayout
             style="@style/LinearLayoutStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="364dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:orientation="horizontal">
 
 
             <LinearLayout
                 style="@style/LinearLayoutStyle"
-                android:layout_width="119dp"
-                android:layout_height="362dp">
+                android:layout_width="112dp"
+                android:layout_height="match_parent">
 
 
                 <ImageButton
                     android:id="@+id/doctor_view_details"
-                    style="@style/ImageButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="96dp"
-                    app:srcCompat="@drawable/dd" />
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/d" />
 
                 <TextView
                     android:id="@+id/text_view_details"
-                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="View doctor details"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
 
                 <ImageButton
                     android:id="@+id/doctor_telemedicine"
-                    style="@style/ImageButtonStyle"
-                    app:srcCompat="@drawable/t" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/d" />
 
                 <TextView
                     android:id="@+id/text_telemedicine"
-                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Telemedicine"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
 
 
             <LinearLayout
                 style="@style/LinearLayoutStyle"
-                android:layout_width="126dp"
-                android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
 
 
                 <ImageButton
                     android:id="@+id/confirm_appointments"
-                    style="@style/ImageButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="101dp"
-                    app:srcCompat="@drawable/ca" />
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/d" />
 
                 <TextView
                     android:id="@+id/text_confirm_appointments"
-                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Confirm appointments"
+                    android:textAlignment="center"
                     android:textSize="16sp" />
 
                 <ImageButton
                     android:id="@+id/patients_prescription"
-                    style="@style/ImageButtonStyle"
-                    app:srcCompat="@drawable/p"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/d" />
 
                 <TextView
                     android:id="@+id/text_prescription"
-                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Patient Prescriptions"
+                    android:textAlignment="center"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -101,10 +110,8 @@
         <Button
             android:id="@+id/doctor_logout"
             style="@style/ButtonStyle"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/round_button"
             android:text="Logout"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="86dp" />
+            app:layout_constraintBottom_toBottomOf="parent" />
     </LinearLayout>
     </android.support.constraint.ConstraintLayout>
