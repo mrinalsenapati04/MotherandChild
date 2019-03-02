@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserFoodAndNutrition">
+    tools:context=".UserFoodAndNutrition"
+    android:background="@drawable/background3">
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
-        app:layout_constraintTop_toTopOf= "parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-        <ImageView
-            android:id="@+id/mother_image"
+        <TextView
+            android:id="@+id/mother_diet"
+            style="@style/TextStyle"
+            android:text="MOTHER DIET"
+            android:textSize="40dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/mother3" />
+            android:textStyle="bold"
+            android:textColor="#000000" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,12 +66,20 @@
             android:textColor="#FFFFFF"
             android:layout_gravity="center" />
 
+        <TextView
+            android:id="@+id/child_diet"
+            style="@style/TextStyle"
+            android:text="MONTHLY CHILD DIET"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#000000" />
+
 
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/childeat">
+            android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
