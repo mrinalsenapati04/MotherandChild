@@ -17,6 +17,7 @@ public class UserFoodAndNutrition extends AppCompatActivity implements View.OnCl
     private Button buttonthirdmnth;
     private Button buttonfourthmnth;
     private Button buttonfifthmnth;
+    private Button buttonfoodavoid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,9 @@ public class UserFoodAndNutrition extends AppCompatActivity implements View.OnCl
         buttonfourthmnth= findViewById(R.id.button_child_fourth);
         buttonfifthmnth= findViewById(R.id.button_child_fifth);
 
+        buttonfoodavoid = findViewById(R.id.food_avoid);
+
+
 
         buttonfirsttri.setOnClickListener(this);
         buttonsecondtri.setOnClickListener(this);
@@ -43,6 +47,7 @@ public class UserFoodAndNutrition extends AppCompatActivity implements View.OnCl
         buttonthirdmnth.setOnClickListener(this);
         buttonfourthmnth.setOnClickListener(this);
         buttonfifthmnth.setOnClickListener(this);
+        buttonfoodavoid.setOnClickListener(this);
 
 
 
@@ -68,6 +73,8 @@ public class UserFoodAndNutrition extends AppCompatActivity implements View.OnCl
             startActivity(new Intent(this, Fourthmonthset.class));
         }else if (v == buttonfifthmnth){
             startActivity(new Intent(this, Fifthmonthset.class));
+        } else if (v == buttonfoodavoid) {
+            startActivity(new Intent(this, AvoidFood.class));
         }
 
     }

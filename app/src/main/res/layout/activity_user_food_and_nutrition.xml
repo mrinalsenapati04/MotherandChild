@@ -18,7 +18,7 @@
             android:id="@+id/mother_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/m" />
+            app:srcCompat="@drawable/mother3" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,30 +31,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="I-trimester"
-                style="@style/ButtonStyle" />
+                style="@style/ButtonStyle"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/button_mother_second"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="II-trimester"
-                style="@style/ButtonStyle" />
+                style="@style/ButtonStyle"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/button_mother_third"
                 style="@style/ButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="III-trimester" />
+                android:text="III-trimester"
+                android:textColor="#ffffff" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/food_avoid"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:text="AVOID FOOD"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
 
 
         <ImageView
             android:id="@+id/child_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/m" />
+            app:srcCompat="@drawable/childs" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -71,21 +84,24 @@
                         style="@style/ButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0-4mnths" />
+                        android:text="0-4mnths"
+                        android:textColor="#ffffff" />
 
                     <Button
                         android:id="@+id/button_child_second"
                         style="@style/ButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4-6mnths" />
+                        android:text="4-6mnths"
+                        android:textColor="#ffffff" />
 
                     <Button
                         android:id="@+id/button_child_third"
                         style="@style/ButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="6-8mnths" />
+                        android:text="6-8mnths"
+                        android:textColor="#ffffff" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,7 +115,8 @@
                         style="@style/ButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="8-10mnths" />
+                        android:text="8-10mnths"
+                        android:textColor="#ffffff" />
 
                     <Button
                         android:id="@+id/button_child_fifth"
@@ -107,7 +124,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=">1 year"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="#ffffff" />
 
 
                 </LinearLayout>

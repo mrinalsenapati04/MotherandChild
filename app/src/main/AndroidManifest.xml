@@ -13,29 +13,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".AvoidFood"
+            android:label="Food to be Avoided" />
+        <activity
             android:name=".Fifthmonthset"
             android:label=" Above 1 year" />
         <activity
             android:name=".Fourthmonthset"
-            android:label="8-10 mnths"/>
+            android:label="8-10 mnths" />
         <activity
             android:name=".Thirdmonthset"
-            android:label="6-8 mnths"/>
+            android:label="6-8 mnths" />
         <activity
             android:name=".Secondmonthset"
-            android:label="4-6 mnths"/>
+            android:label="4-6 mnths" />
         <activity
             android:name=".Firstmonthset"
-            android:label="0-4 mnths"/>
+            android:label="0-4 mnths" />
         <activity
             android:name=".ThirdTrimester"
-            android:label="III Trimester"/>
+            android:label="III Trimester" />
         <activity
             android:name=".SecondTrimester"
-            android:label="II Trimester"/>
+            android:label="II Trimester" />
         <activity
             android:name=".FirstTrimester"
-            android:label="I trimester"/>
+            android:label="I trimester" />
         <activity
             android:name=".GovtSchemeRBSK"
             android:label="RBSK" />
