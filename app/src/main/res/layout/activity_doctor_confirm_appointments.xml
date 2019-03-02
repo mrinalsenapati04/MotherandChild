@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".DoctorConfirmAppointments">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textview_doctor_confirm_appointment"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Appointment" />
+
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+
+            <Button
+                android:id="@+id/doctor_decline"
+                style="@style/ButtonStyle"
+                android:background="@drawable/round_button"
+                android:text="DECLINE"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/doctor_confirm"
+                style="@style/ButtonStyle"
+                android:background="@drawable/round_button"
+                android:text="CONFIRM"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
