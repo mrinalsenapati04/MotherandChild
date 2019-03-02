@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginDoctor"
-    android:background="@drawable/doctorsign1">
+    tools:context=".LoginDoctor">
 
 
     <LinearLayout
@@ -32,7 +31,9 @@
             android:id="@+id/button_doctorlogin"
             style="@style/ButtonStyle"
             android:text="LOGIN"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_button" />
 
         <TextView
             android:id="@+id/textview_doctorregister"

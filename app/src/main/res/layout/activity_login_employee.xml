@@ -30,7 +30,9 @@
             android:id="@+id/button_employeelogin"
             style="@style/ButtonStyle"
             android:background="@drawable/round_button"
-            android:text="LOGIN" />
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textview_employeeregister"

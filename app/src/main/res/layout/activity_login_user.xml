@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginUser">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
-
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
@@ -40,12 +30,16 @@
         <Button
             android:id="@+id/button_login"
             style="@style/ButtonStyle"
-            android:text="LOGIN" />
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textview_register"
             android:text="New user? Register"
-            style="@style/TextStyle" />
+            style="@style/TextStyle"
+            android:textStyle="bold"
+            android:textColor="#000000" />
 
     </LinearLayout>
 

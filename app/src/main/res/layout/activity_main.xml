@@ -21,28 +21,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="40dp">
 
        <ImageButton
            android:id="@+id/imagebutton_mother"
-           android:src="@drawable/m"
-           android:layout_margin="8dp"
-           android:layout_width="120dp"
-           android:layout_height="120dp" />
+           android:src="@drawable/motherpreg2"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_weight="10" />
 
         <ImageButton
             android:id="@+id/imagebutton_doctor"
-            android:src="@drawable/d"
-            android:layout_margin="8dp"
-            android:layout_width="120dp"
-            android:layout_height="120dp" />
+            android:src="@drawable/doc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
 
         <ImageButton
             android:id="@+id/imagebutton_employee"
-            android:src="@drawable/e"
-            android:layout_margin="8dp"
-            android:layout_width="120dp"
-            android:layout_height="120dp" />
+            android:src="@drawable/employee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
 
     </LinearLayout>
 
