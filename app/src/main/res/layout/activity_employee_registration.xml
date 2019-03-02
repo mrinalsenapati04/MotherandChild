@@ -1,40 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".EmployeeRegistration">
+    android:layout_height="wrap_content"
+    tools:context=".EmployeeRegistration"
+    android:orientation="vertical"
+    android:layout_marginTop="220dp">
 
-    <LinearLayout
-        style="@style/LinearLayoutStyle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-    <EditText
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/email" />
+        <EditText
             android:id="@+id/edittext_employee_email_reg"
             style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:hint="Enter Your Email-ID"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="48dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pass"
+                />
         <EditText
             android:id="@+id/edittext_employee_password_reg"
             style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:hint="Password"
-            android:inputType="textPassword" />
-
+            android:inputType="textPassword"
+            android:layout_marginLeft="48dp"/>
+        </RelativeLayout>
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:id="@+id/button_employee_register"
             style="@style/ButtonStyle"
             android:background="@drawable/round_button"
             android:text="REGISTER" />
 
         <TextView
+            android:layout_margin="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:id="@+id/textview_employee_login"
-            android:text="Existing Employee? LOGIN"
-            style="@style/TextStyle" />
+            style="@style/TextStyle"
+            android:text="Existing Employee? LOGIN" />
 
     </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
