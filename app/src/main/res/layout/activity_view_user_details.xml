@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewUserDetails">
+    tools:context=".ViewUserDetails"
+    android:background="@drawable/background4">
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
@@ -15,23 +16,31 @@
         <TextView
             android:id="@+id/textview_header"
             android:text="Personal details: "
-            style="@style/TextStyle" />
+            style="@style/TextStyle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textview_personal_details"
             android:text="your details: "
-            style="@style/TextStyle"/>
+            style="@style/TextStyle"
+            android:textStyle="bold" />
 
 
         <Button
             android:id="@+id/user_update_details"
             style="@style/ButtonStyle"
-            android:text="User Update Details" />
+            android:text="User Update Details"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button_back"
             style="@style/ButtonStyle"
-            android:text="user main"/>
+            android:text="User Main"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 

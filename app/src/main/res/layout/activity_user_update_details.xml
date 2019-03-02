@@ -59,7 +59,10 @@
         <Button
             android:id="@+id/button_update_details_database"
             style="@style/ButtonStyle"
-            android:text="Update Details"/>
+            android:text="Update Details"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/round_button" />
 
 
     </LinearLayout>

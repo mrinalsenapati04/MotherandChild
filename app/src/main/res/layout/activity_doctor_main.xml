@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorMain">
+    tools:context=".DoctorMain"
+    android:background="@drawable/background3">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:orientation="vertical"
         app:layout_constraintBaseline_toBaselineOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,21 +20,24 @@
         <TextView
             android:id="@+id/doctor_welcome"
             android:text="Welcome : "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#D50000" />
 
 
         <LinearLayout
             style="@style/LinearLayoutStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
             android:orientation="horizontal">
 
 
             <LinearLayout
                 style="@style/LinearLayoutStyle"
-                android:layout_width="112dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
 
@@ -41,29 +45,35 @@
                     android:id="@+id/doctor_view_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/d" />
+                    app:srcCompat="@drawable/viewdetails"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/text_view_details"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="View doctor details"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
                     android:textSize="16sp"
-                    android:textAlignment="center"/>
+                    android:layout_weight="1" />
 
                 <ImageButton
                     android:id="@+id/doctor_telemedicine"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/d" />
+                    app:srcCompat="@drawable/telemedicine"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/text_telemedicine"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Telemedicine"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
                     android:textSize="16sp"
-                    android:textAlignment="center"/>
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -78,29 +88,35 @@
                     android:id="@+id/confirm_appointments"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/d" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/confirmappointments" />
 
                 <TextView
                     android:id="@+id/text_confirm_appointments"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Confirm appointments"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <ImageButton
                     android:id="@+id/patients_prescription"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/d" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/prescription" />
 
                 <TextView
                     android:id="@+id/text_prescription"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Patient Prescriptions"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -110,8 +126,9 @@
         <Button
             android:id="@+id/doctor_logout"
             style="@style/ButtonStyle"
-            android:background="@drawable/round_button"
+
             android:text="Logout"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#ffffff" />
     </LinearLayout>
     </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewDoctorDetails">
+    tools:context=".ViewDoctorDetails"
+    android:background="@drawable/background4">
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
@@ -15,23 +16,31 @@
         <TextView
             android:id="@+id/textview_doctor_header"
             android:text="Personal details: "
-            style="@style/TextStyle" />
+            style="@style/TextStyle"
+            android:textStyle="bold"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/textview_doctor_details"
             android:text="your details: "
-            style="@style/TextStyle" />
+            style="@style/TextStyle"
+            android:textStyle="bold"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/doctor_update_details"
             style="@style/ButtonStyle"
-            android:text="Doctor Update Details" />
+            android:text="Doctor Update Details"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
 
         <Button
             android:id="@+id/button_doctor_back"
             style="@style/ButtonStyle"
-            android:text="Doctor main"/>
+            android:text="Doctor main"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 
