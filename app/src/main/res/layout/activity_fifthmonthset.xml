@@ -4,6 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fifthmonthset">
+    tools:context=".Fifthmonthset"
+    android:background="@drawable/childfood5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/fifth_monthset"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diet Plan for Above 1 year"
+            android:textAlignment="center"
+            android:textColor="#FF3D00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/month_detail_5"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/fifthmonthset"
+            android:gravity="fill"
+            android:textAlignment="gravity"
+            android:textColor="#558B2F"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

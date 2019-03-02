@@ -18,6 +18,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ApplySchemeRBSK"
+            android:label="Steps For RBSK"/>
+        <activity
+            android:name=".ApplySchemeINAP"
+            android:label="Steps For INAAP"/>
+        <activity
+            android:name=".ApplySchemeHBNC"
+            android:label="Steps For HBNC"/>
+        <activity
+            android:name=".ApplySchemeFBNC"
+            android:label="Steps For FBNC"/>
+        <activity
+            android:name=".ApplySchemeJSSK"
+            android:label="Steps For JSSK"/>
+        <activity
             android:name=".AvoidFood"
             android:label="Food to be Avoided" />
         <activity
