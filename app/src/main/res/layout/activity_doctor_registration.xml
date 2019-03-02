@@ -30,7 +30,8 @@
             android:id="@+id/button_doctor_register"
             style="@style/ButtonStyle"
             android:text="REGISTER"
-            android:background="@drawable/round_button"/>
+            android:background="@drawable/round_button"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textview_doctor_login"

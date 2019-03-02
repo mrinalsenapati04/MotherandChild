@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginDoctor">
+    tools:context=".LoginDoctor"
+    android:background="@drawable/doctorsign1">
 
 
     <LinearLayout
@@ -30,12 +31,15 @@
         <Button
             android:id="@+id/button_doctorlogin"
             style="@style/ButtonStyle"
-            android:text="LOGIN" />
+            android:text="LOGIN"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textview_doctorregister"
             android:text="New Doctor? Register"
-
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
             style="@style/TextStyle" />
 
     </LinearLayout>

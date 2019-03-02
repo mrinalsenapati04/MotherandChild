@@ -30,7 +30,8 @@
         <Button
             android:id="@+id/buttonImage"
             style="@style/ButtonStyle"
-            android:text="Select Image" />
+            android:text="Select Image"
+            android:textColor="#ffffff" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -41,7 +42,8 @@
         <Button
             android:id="@+id/buttonSubmit"
             style="@style/ButtonStyle"
-            android:text="Upload Image" />
+            android:text="Upload Image"
+            android:textColor="#ffffff" />
 
 
 
