@@ -38,14 +38,14 @@
             android:textAlignment="center"/>
 
 
-
-        <EditText
-            android:id="@+id/skype_id"
-            style="@style/EditTextStyle"
-            android:hint="Skype Id"
-            android:inputType="text"
-            android:gravity="center"
-            android:layout_marginBottom="10dp"/>
+        <!--
+                <EditText
+                    android:id="@+id/skype_id"
+                    style="@style/EditTextStyle"
+                    android:hint="Skype Id"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"/>  -->
 
         <Button
             android:id="@+id/video_call"

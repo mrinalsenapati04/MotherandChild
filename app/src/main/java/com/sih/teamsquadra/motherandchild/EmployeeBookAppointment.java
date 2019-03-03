@@ -2,8 +2,10 @@ package com.sih.teamsquadra.motherandchild;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,7 +13,26 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class EmployeeBookAppointment extends AppCompatActivity implements AdapterView.OnItemSelectedListener , View.OnClickListener{
+
+    private Spinner spDocName;
+    private Spinner spinner;
+    private String docType;
+    private String selected;
+
+
+    private DatabaseReference db;
+
 
 
 
@@ -24,17 +45,40 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
         setContentView(R.layout.activity_employee_book_appointment);
 
 
-        Spinner spinner1 = findViewById(R.id.doctor_name);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.doctorsname,android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(adapter1);
-        spinner1.setOnItemSelectedListener(this);
+        //  Spinner spinner1 = findViewById(R.id.doctor_name);
+        //  ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.doctorsname,android.R.layout.simple_spinner_item);
+        //   adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // spinner1.setAdapter(adapter1);
+        //  spinner1.setOnItemSelectedListener(this);
 
-        Spinner spinner = findViewById(R.id.doctor_type);
+
+        spinner = findViewById(R.id.doctor_type);
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.doctorstype,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
+
+
+        //
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selected = parent.getItemAtPosition(position).toString();
+                Toast.makeText(EmployeeBookAppointment.this, "Selected item is " + selected, Toast.LENGTH_LONG).show();
+                // Log.v("EmployeeBookAppointment","Selected String is " + selected);
+                setDoctorNameList(selected);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        //Setting Doctor Name List according to doctor type;
+        // setDoctorNameList(docType);
 
 
         buttonBookAppointment = findViewById(R.id.button_book_appointment);
@@ -66,4 +110,42 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
 
     }
+
+    private void setDoctorNameList(final String s) {
+        // final String docType1=spinner.getItemAtPosition(spinner.getSelectedItemPosition()).toString();
+
+        //  final Spinner sp=findViewById(R.id.doctor_type);
+        //final String docType=spinner.getSelectedItem().toString();
+        db = FirebaseDatabase.getInstance().getReference();
+
+        db.child("Doctors").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final List<String> namelist = new ArrayList<String>();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    String dT = ds.child("speciality").getValue(String.class);
+                    // Log.v("EmployeeBookAppointment","dT is " + dT + " docType is " + docType1);
+                    if (dT.equals(s)) {
+                        String name = ds.child("name").getValue(String.class);
+                        namelist.add(name);
+                    }
+
+                }
+                spDocName = (Spinner) findViewById(R.id.doctor_name);
+                ArrayAdapter<String> namesAdapter = new ArrayAdapter<String>(EmployeeBookAppointment.this, android.R.layout.simple_spinner_item, namelist);
+                namesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spDocName.setAdapter(namesAdapter);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+
 }
+

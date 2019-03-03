@@ -67,6 +67,7 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
         FirebaseUser user = firebaseAuth.getCurrentUser();
         //databaseReference.child(user.getUid()).setValue(user);
 
+
         databaseReference.child(user.getUid()).child("type").setValue("user");
         databaseReference.child(user.getUid()).child("name").setValue(name);
         databaseReference.child(user.getUid()).child("address").setValue(address);
@@ -92,4 +93,6 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
     private void toastMessage(Context context, String message){
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
     }
+
+
 }
