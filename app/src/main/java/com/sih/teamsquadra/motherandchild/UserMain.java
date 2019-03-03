@@ -138,7 +138,7 @@ public class UserMain extends AppCompatActivity implements View.OnClickListener 
             firebaseAuth.signOut();
             toastMessage("Signing Out...");
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Feedback.class));
         }  else if (v == buttonUserViewDetails){
             startActivity(new Intent(this, ViewUserDetails.class));
         }else if (v == buttonGovernmentScheme){

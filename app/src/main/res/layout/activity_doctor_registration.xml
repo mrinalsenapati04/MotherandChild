@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorRegistration">
+    tools:context=".DoctorRegistration"
+    android:background="@drawable/background8">
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
@@ -30,8 +31,8 @@
             android:id="@+id/button_doctor_register"
             style="@style/ButtonStyle"
             android:text="REGISTER"
-            android:background="@drawable/round_button"
-            android:textColor="#ffffff" />
+            android:background="@drawable/round_button2"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/textview_doctor_login"

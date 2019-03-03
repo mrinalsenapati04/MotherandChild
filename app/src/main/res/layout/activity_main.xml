@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background1">
+    android:background="@drawable/coffee_bg"
+    tools:context="com.sih.teamsquadra.motherandchild.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+    <include layout="@layout/video_activity"></include>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="5dp">
-
-       <ImageButton
-           android:id="@+id/imagebutton_mother"
-           android:src="@drawable/momff"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_weight="10" />
-
-        <ImageButton
-            android:id="@+id/imagebutton_doctor"
-            android:src="@drawable/docff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="10" />
-
-        <ImageButton
-            android:id="@+id/imagebutton_employee"
-            android:src="@drawable/employff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="10" />
-
-    </LinearLayout>
-
-
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>

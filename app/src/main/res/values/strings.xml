@@ -336,5 +336,10 @@ INFANTS\n\n
 
     </string>
 
+    <string name="feedback">
+
+        \"Please provide your valuable feedback\"
+    </string>
+
 
 </resources>
