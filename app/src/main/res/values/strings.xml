@@ -296,5 +296,45 @@ INFANTS\n\n
 
     </string>
 
+    <string name="applyfbnc">
+
+        ***No Registration is Required ****\n\n
+        This scheme is releted to improvement of medical facilities at government hospitals.
+
+
+
+    </string>
+
+    <string name="applyhbnc">
+        **Get Registered yourself with ASHA (similar to Aanganwadi Workers) within your vicinity.\n\n
+        **Requirement:\n
+        Any Government Identity Proof.\nBPL Certificate (mandatory)
+
+
+    </string>
+    <string name="applyinap">
+
+
+
+    </string>
+    <string name="applyjssk">
+
+      **Get Registered yourself in near by PHC(Primary Health Center) or any Government Health institute.\n\n
+      **Requirement:\n
+        Any Government Identity Proof.\nBPL Certificate (mandatory)
+
+
+    </string>
+    <string name="applyrbsk">
+
+        **First level of Screening is done at Delivery Points through existing medical officers.\n
+        **Second Screening of NEW BORN is done by ASHA workers at home.\n
+        **Regular Monitoring of Child for the next few months by Aanganwadi workers.\n
+        **Once the Child is screened and referred from any otf these above points of identification , then child will be eligible for treatment at ZERO cost to family.
+
+
+
+    </string>
+
 
 </resources>
