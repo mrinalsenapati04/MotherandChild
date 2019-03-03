@@ -139,7 +139,7 @@ public class DoctorMain extends AppCompatActivity implements View.OnClickListene
             firebaseAuth.signOut();
             toastMessage("Signing Out...");
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Feedback.class));
 
         } else if (v == imageButtonDoctorConfirmAppointments){
             startActivity(new Intent(this, DoctorConfirmAppointments.class));

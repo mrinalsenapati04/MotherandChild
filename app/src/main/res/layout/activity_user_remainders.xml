@@ -5,6 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserRemainders"
-    android:background="@drawable/background">
+    android:background="@drawable/background9">
+
+    <TextView
+        android:id="@+id/textview_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please take medicine"
+        android:textStyle="italic"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        style="@style/LinearLayoutStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <EditText
+            android:id="@+id/editText_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date" />
+
+
+        <EditText
+            android:id="@+id/editText_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time"
+            android:hint="Time" />
+
+        <Button
+            android:id="@+id/button_send_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Notification"
+            android:background="@drawable/round_button2" />
+
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

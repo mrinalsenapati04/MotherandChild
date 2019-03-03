@@ -137,7 +137,7 @@ public class EmployeeMain extends AppCompatActivity implements View.OnClickListe
             firebaseAuth.signOut();
             toastMessage("Signing Out...");
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Feedback.class));
         } else if (v == buttonEmployeeViewDetails) {
             startActivity(new Intent(this, ViewEmployeeDetails.class));
         }else if (v == buttonEmployeeTelemedicine) {

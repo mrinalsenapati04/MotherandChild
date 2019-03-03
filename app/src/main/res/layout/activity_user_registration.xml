@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserRegistration"
-    android:background="@drawable/registration">
+    android:background="@drawable/background7">
 
     <LinearLayout
         style="@style/LinearLayoutStyle"
@@ -32,9 +32,9 @@
             android:id="@+id/button_register"
             style="@style/ButtonStyle"
             android:text="REGISTER"
-            android:textColor="#DD2C00"
+            android:textColor="#000000"
             android:textStyle="bold"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textview_login"

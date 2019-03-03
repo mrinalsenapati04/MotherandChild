@@ -6,10 +6,6 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,20 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Feedback"
+            android:label="Feedback" />
+
+        <activity
             android:name=".ApplySchemeRBSK"
-            android:label="Steps For RBSK"/>
+            android:label="Steps For RBSK" />
         <activity
             android:name=".ApplySchemeINAP"
-            android:label="Steps For INAAP"/>
+            android:label="Steps For INAAP" />
         <activity
             android:name=".ApplySchemeHBNC"
-            android:label="Steps For HBNC"/>
+            android:label="Steps For HBNC" />
         <activity
             android:name=".ApplySchemeFBNC"
-            android:label="Steps For FBNC"/>
+            android:label="Steps For FBNC" />
         <activity
             android:name=".ApplySchemeJSSK"
-            android:label="Steps For JSSK"/>
+            android:label="Steps For JSSK" />
         <activity
             android:name=".AvoidFood"
             android:label="Food to be Avoided" />
@@ -179,11 +179,9 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_stat_mother" />
-
     </application>
 
 </manifest>
