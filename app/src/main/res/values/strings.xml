@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Mother and Child</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="title_activity_user" translatable="false">UserActivity</string>
+
+
+    <!-- String names   -->
+    <string name="usermain_welcome">Welcome :</string>
+    <string name="usermain_view_user_details">View User Details</string>
+    <string name="usermain_govt_schemes">Government Scheme</string>
+    <string name="usermain_food_and_nutrition">Food and Nutrition</string>
+    <string name="usermain_remainder">Remainder</string>
+    <string name="usermain_logout">Logout</string>
 
 
     <!-- Employee Telemedicine-->
@@ -86,7 +95,7 @@
 
     </string-array>
 
-    <string name="INAP">
+    <string name="INAP" translatable="false">
        It has been launched with an aim to reduce neonatal mortality and stillbirths.\n
 1. Pre_Conception and Antenatal Care Intervention Package:Antenatal screening for Anemia and Hypertensive  disorders of pregnancy.\n\n
 2. Care during Labour and Childbirth.\n\n
@@ -97,7 +106,7 @@
 
     </string>
 
-    <string name="JSSK">
+    <string name="JSSK" translatable="false">
         This scheme entitles all pregnant women delivering in public health institutions to absolutely free and no expense delivery including Caesarean section.\n\n
 MOTHER/PREGNANT WOMEN\n\n
 1. Free and cashless  delivery\n
@@ -117,7 +126,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="HBNC">
+    <string name="HBNC" translatable="false">
        HBNC through ASHAs has been initiated to improve newborn practices at the community level and early detection and referral of sick newborn babies.\n\n
 1. Essential care of the newborn.\n\n
 2. Examination of the newborn.\n\n
@@ -129,14 +138,14 @@ INFANTS\n\n
 
     </string>
 
-    <string name="FBNC">
+    <string name="FBNC" translatable="false">
         It amis at different levels to reduce newborn morbidity and mortality by setting up of Special New Born Care Units (SNCUs), Newborn Stabilization Units (NBSUs) and Newborn Care Corners (NBCCs) atdifferent levels is a thrust area under NHM.\n\n
 1. Kangaroo Mother Care\n
 2. Thermal Protection\n
 3. Resuscitation of the Newborn Baby\n
     </string>
 
-    <string name="RBSK">
+    <string name="RBSK" translatable="false">
          RBSK for health screening and early intervention services has been launched to provide comprehensive care to all the children in the age group of 0-18 years in the community.\n\n
 1. Screening at Anganwadi level: \n\nScreening by Mobile Block Health teams for deficiencies, diseases, developmental delays including disability at the
  Anganwadi centre at least twice a year.\n\n
@@ -146,7 +155,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="firsttrimester">
+    <string name="firsttrimester" translatable="false">
 
 
 ** Folic acid is an important addition to your diet as it helps sustain and develop the embryo.\n\n
@@ -165,7 +174,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="secondtrimester">
+    <string name="secondtrimester" translatable="false">
         *Add in good fats such as\n\n
 1.Avocado, salmon and fish liver oil in your diet.\n
 2.Foods with iron, meats, whole grain, dried fruits and legumes.\n\n
@@ -184,7 +193,7 @@ INFANTS\n\n
     </string>
 
 
-    <string name="thirdtrimester">
+    <string name="thirdtrimester" translatable="false">
       **For this crucial time, youll need these five nutrients:\n\n
 1.Vitamin C, calcium, magnesium, Omega 3 fatty acids and choline.\n
 2.Fresh fruits (berries, banana, melon etc).\n
@@ -194,7 +203,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="avoidfood">
+    <string name="avoidfood" translatable="false">
         ***Food to be AVOIDED during pregnancy***\n\n
 1.Fish and Seafood.\n
 2.Papaya.\n
@@ -208,7 +217,7 @@ INFANTS\n\n
     </string>
 
 
-    <string name="firstmonthset">
+    <string name="firstmonthset" translatable="false">
 
        Breast milk or formula "ONLY"
 
@@ -217,7 +226,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="secondmonthset">
+    <string name="secondmonthset" translatable="false">
 
     1.Breast milk or formula.\n
     2.Pureed foods and iron-fortified infant cereal if your doctor gives the okay.\n\n
@@ -234,7 +243,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="thirdmonthset">
+    <string name="thirdmonthset" translatable="false">
 
     1.Breast milk or formula.\n
     2.Pureed fruits and vegetables.\n
@@ -252,7 +261,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="fourthmonthset">
+    <string name="fourthmonthset" translatable="false">
 
     1.Breast milk or formula.\n
     2.Mashed fruits and vegetables.\n
@@ -273,7 +282,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="fifthmonthset">
+    <string name="fifthmonthset" translatable="false">
 
     1.Breast milk or formula.\n
     2.Chopped or bite-size fruits and vegetables.\n
@@ -296,7 +305,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="applyfbnc">
+    <string name="applyfbnc" translatable="false">
 
         ***No Registration is Required ****\n\n
         This scheme is releted to improvement of medical facilities at government hospitals.
@@ -305,19 +314,19 @@ INFANTS\n\n
 
     </string>
 
-    <string name="applyhbnc">
+    <string name="applyhbnc" translatable="false">
         **Get Registered yourself with ASHA (similar to Aanganwadi Workers) within your vicinity.\n\n
         **Requirement:\n
         Any Government Identity Proof.\nBPL Certificate (mandatory)
 
 
     </string>
-    <string name="applyinap">
+    <string name="applyinap" translatable="false">
 
 
 
     </string>
-    <string name="applyjssk">
+    <string name="applyjssk" translatable="false">
 
       **Get Registered yourself in near by PHC(Primary Health Center) or any Government Health institute.\n\n
       **Requirement:\n
@@ -325,7 +334,7 @@ INFANTS\n\n
 
 
     </string>
-    <string name="applyrbsk">
+    <string name="applyrbsk" translatable="false">
 
         **First level of Screening is done at Delivery Points through existing medical officers.\n
         **Second Screening of NEW BORN is done by ASHA workers at home.\n
@@ -336,7 +345,7 @@ INFANTS\n\n
 
     </string>
 
-    <string name="feedback">
+    <string name="feedback" translatable="false">
 
         \"Please provide your valuable feedback\"
     </string>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मां और बच्चा</string>
+    <string name="usermain_view_user_details" translatable="false">उपयोगकर्ता विवरण देखें</string>
+    <string name="usermain_govt_schemes" translatable="false">सरकारी योजना</string>
+    <string name="usermain_food_and_nutrition" translatable="false">खाद्य और पोषण</string>
+    <string name="usermain_remainder" translatable="false">अनुस्मारक</string>
+    <string name="usermain_welcome" translatable="false">स्वागत हे :</string>
+    <string name="usermain_logout" translatable="false">लोग आउट</string>
+</resources>
