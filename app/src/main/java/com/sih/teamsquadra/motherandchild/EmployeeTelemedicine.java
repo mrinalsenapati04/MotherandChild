@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,34 +15,84 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class EmployeeTelemedicine extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
     private Button buttonVideoCall;
-    private EditText editTextSkypeId;
+    private String selected;
+    private DatabaseReference db;
+    private Spinner spinnerDoctorName;
+    private HashMap<String, String> hash_map = new HashMap<String, String>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_telemedicine);
 
-        Spinner spinner1 = findViewById(R.id.doctor_name);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.doctorsname,android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(adapter1);
-        spinner1.setOnItemSelectedListener(this);
+        spinnerDoctorName = (Spinner) findViewById(R.id.doctor_name);
 
-        Spinner spinner = findViewById(R.id.doctor_type);
+        final Spinner spinner = findViewById(R.id.doctor_type);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.doctorstype,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
 
+
+        //Onclick Listener for Doctor Type Spinner
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selected = parent.getItemAtPosition(position).toString();
+                setDoctorNameList(selected);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        //OnClickListen for Doc_name Spinner
+
+       /* spDocName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                String s=parent.getItemAtPosition(position).toString();
+                getSkypeId(s);
+            }
+        });*/
+/*
+        spDocName.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String s=parent.getItemAtPosition(position).toString();
+                Toast.makeText(EmployeeTelemedicine.this,"s is "+ s,Toast.LENGTH_LONG).show();
+                //Log.v("EmployeeTelemedicine","selected skype id  here is " + selectedSkypeId);
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+*/
         buttonVideoCall = findViewById(R.id.video_call);
         buttonVideoCall.setOnClickListener(this);
-
-        editTextSkypeId = findViewById(R.id.skype_id);
 
     }
 
@@ -59,9 +110,10 @@ public class EmployeeTelemedicine extends AppCompatActivity implements AdapterVi
     @Override
     public void onClick(View v) {
         if(v== buttonVideoCall){
-            String userName = editTextSkypeId.getText().toString();
-            Log.v("MainActivity","UserName is : "+userName);
-            initiateSkypeUri(this , Uri.parse("skype:" + "live:"+userName + "?call&video=true").toString());
+            String docName = spinnerDoctorName.getSelectedItem().toString().trim();
+            String skypeId = hash_map.get(docName);
+            Log.v("EmployeeTelemedicine", "hash map value is  " + hash_map.get(docName));
+            initiateSkypeUri(this, Uri.parse("skype:" + "live:" + skypeId + "?call&video=true").toString());
 
         }
 
@@ -120,5 +172,42 @@ public class EmployeeTelemedicine extends AppCompatActivity implements AdapterVi
         myContext.startActivity(myIntent);
 
         return;
+    }
+
+    private void setDoctorNameList(final String s) {
+
+        db = FirebaseDatabase.getInstance().getReference();
+
+        db.child("Doctors").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final List<String> namelist = new ArrayList<String>();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    String docT = ds.child("speciality").getValue(String.class);
+                    //  String docSI=ds.child("skypeID").getValue(String.class);
+                    //  editTextSkypeId.set
+
+                    if (docT.equals(s)) {
+                        String name = ds.child("name").getValue(String.class);
+                        String sId = ds.child("skypeID").getValue(String.class);
+                        hash_map.put(name, sId);
+
+                        namelist.add(name);
+                    }
+
+                }
+                //   spDocName=(Spinner) findViewById(R.id.doctor_name);
+                ArrayAdapter<String> namesAdapter = new ArrayAdapter<String>(EmployeeTelemedicine.this, android.R.layout.simple_spinner_item, namelist);
+                namesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinnerDoctorName.setAdapter(namesAdapter);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 }
