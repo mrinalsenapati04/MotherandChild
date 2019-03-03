@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeeBookAppointment">
+    tools:context=".EmployeeBookAppointment"
+    android:background="@drawable/background4">
 
 
     <LinearLayout
@@ -57,7 +58,8 @@
             android:id="@+id/button_book_appointment"
             style="@style/ButtonStyle"
             android:background="@drawable/round_button"
-            android:text="Click to Continue"/>
+            android:text="Click to Continue"
+            android:textColor="#ffffff" />
 
 
     </LinearLayout>

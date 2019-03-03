@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
 
 
         <!--
@@ -50,7 +50,8 @@
         <Button
             android:id="@+id/video_call"
             style="@style/ButtonStyle"
-            android:text="VIDEO CALL"/>
+            android:text="VIDEO CALL"
+            android:textColor="#ffffff" />
 
 
 

@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     tools:context=".EmployeeRegistration"
     android:orientation="vertical"
-    android:layout_marginTop="220dp">
+    android:layout_marginTop="220dp"
+    android:background="@drawable/background4">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,7 +50,8 @@
             android:id="@+id/button_employee_register"
             style="@style/ButtonStyle"
             android:background="@drawable/round_button"
-            android:text="REGISTER" />
+            android:text="REGISTER"
+            android:textColor="#ffffff" />
 
         <TextView
             android:layout_margin="60dp"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginUser">
+    tools:context=".LoginUser"
+    android:background="@drawable/background4">
 
 
     <LinearLayout
@@ -37,9 +38,7 @@
         <TextView
             android:id="@+id/textview_register"
             android:text="New user? Register"
-            style="@style/TextStyle"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            style="@style/TextStyle" />
 
     </LinearLayout>
 

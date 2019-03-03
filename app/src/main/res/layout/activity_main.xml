@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background1">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -22,27 +23,27 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginHorizontal="40dp">
+        android:layout_margin="5dp">
 
        <ImageButton
            android:id="@+id/imagebutton_mother"
-           android:src="@drawable/motherpreg2"
+           android:src="@drawable/momff"
            android:layout_width="wrap_content"
-           android:layout_height="match_parent"
+           android:layout_height="wrap_content"
            android:layout_weight="10" />
 
         <ImageButton
             android:id="@+id/imagebutton_doctor"
-            android:src="@drawable/doc"
+            android:src="@drawable/docff"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="10" />
 
         <ImageButton
             android:id="@+id/imagebutton_employee"
-            android:src="@drawable/employee"
+            android:src="@drawable/employff"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="10" />
 
     </LinearLayout>

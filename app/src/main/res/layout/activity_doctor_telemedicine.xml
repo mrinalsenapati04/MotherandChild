@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorTelemedicine">
+    tools:context=".DoctorTelemedicine"
+    android:background="@drawable/background4">
 
 
     <LinearLayout
@@ -34,7 +35,9 @@
         <Button
             android:id="@+id/doctor_video_call"
             style="@style/ButtonStyle"
-            android:text="VIDEO CALL"/>
+            android:text="VIDEO CALL"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
 
 
 

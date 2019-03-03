@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeeMain">
+    tools:context=".EmployeeMain"
+    android:background="@drawable/background4">
 
     <LinearLayout
 
@@ -21,34 +22,40 @@
         <Button
             android:id="@+id/employee_view_details"
             style="@style/ButtonStyle"
-            android:text="View Employee Details" />
+            android:text="View Employee Details"
+            android:textColor="#ffffff" />
 
 
         <Button
             android:id="@+id/button_telemedicine"
             style="@style/ButtonStyle"
-            android:text="Telemedicine" />
+            android:text="Telemedicine"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button_dr_appointment"
             style="@style/ButtonStyle"
-            android:text="Book Appointment" />
+            android:text="Book Appointment"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button_transportation"
             style="@style/ButtonStyle"
-            android:text="Transport Facility" />
+            android:text="Transport Facility"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button_economic_support"
             style="@style/ButtonStyle"
-            android:text="Economic Support" />
+            android:text="Economic Support"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/employee_logout"
             style="@style/ButtonStyle"
             android:background="@drawable/round_button"
-            android:text="Logout" />
+            android:text="Logout"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 
