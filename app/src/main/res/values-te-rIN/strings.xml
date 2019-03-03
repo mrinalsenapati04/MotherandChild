@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">తల్లి మరియు శిశు</string>
+    <string name="usermain_view_user_details" translatable="false">వాడుకరి వివరాలు చూడండి</string>
+    <string name="usermain_govt_schemes" translatable="false">ప్రభుత్వ పథకం</string>
+    <string name="usermain_food_and_nutrition" translatable="false">ఫుడ్ అండ్ న్యూట్రిషన్</string>
+    <string name="usermain_remainder" translatable="false">గుర్తు చేయడం</string>
+    <string name="usermain_welcome" translatable="false">స్వాగతం:</string>
+    <string name="usermain_logout" translatable="false">లాగౌట్</string>
+</resources>
