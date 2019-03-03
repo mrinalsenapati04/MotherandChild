@@ -27,6 +27,8 @@ public class EmployeeMain extends AppCompatActivity implements View.OnClickListe
     private Button buttonEconomicSupport;
     private Button buttonTransportFacility;
     private Button buttonEmployeeViewDetails;
+
+    private Button buttonUploadVideo;
     private TextView textViewEmployeeWelcome;
 
     private FirebaseDatabase firebaseDatabase;
@@ -100,6 +102,8 @@ public class EmployeeMain extends AppCompatActivity implements View.OnClickListe
 
         buttonEmployeeViewDetails = findViewById(R.id.employee_view_details);
         buttonEmployeeViewDetails.setOnClickListener(this);
+        buttonUploadVideo = findViewById(R.id.button_upload_video);
+        buttonUploadVideo.setOnClickListener(this);
     }
 
     private void showData(DataSnapshot dataSnapshot) {
@@ -148,8 +152,9 @@ public class EmployeeMain extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, TransportFacility.class));
         }else if (v == buttonEconomicSupport) {
             startActivity(new Intent(this, EconomicSupport.class));
+        } else if (v == buttonUploadVideo) {
+            startActivity(new Intent(this, RecordVideo.class));
         }
-
 
     }
 

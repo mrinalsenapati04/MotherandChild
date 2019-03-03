@@ -39,6 +39,12 @@
             android:textColor="#ffffff" />
 
         <Button
+            android:id="@+id/button_upload_video"
+            style="@style/ButtonStyle"
+            android:text="Upload Video"
+            android:textColor="#ffffff" />
+
+        <Button
             android:id="@+id/button_transportation"
             style="@style/ButtonStyle"
             android:text="Transport Facility"
