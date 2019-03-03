@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -20,7 +21,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class EmployeeBookAppointment extends AppCompatActivity implements AdapterView.OnItemSelectedListener , View.OnClickListener{
@@ -29,6 +33,16 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
     private Spinner spinner;
     private String docType;
     private String selected;
+
+    private EditText Date;
+    private EditText Time;
+    private EditText Venue;
+    private EditText doc_aadhar;
+    private EditText user_aadhar;
+
+    private DatabaseReference databaseReference;
+
+
 
 
     private DatabaseReference db;
@@ -65,7 +79,7 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selected = parent.getItemAtPosition(position).toString();
-                Toast.makeText(EmployeeBookAppointment.this, "Selected item is " + selected, Toast.LENGTH_LONG).show();
+                //Toast.makeText(EmployeeBookAppointment.this, "Selected item is " + selected, Toast.LENGTH_LONG).show();
                 // Log.v("EmployeeBookAppointment","Selected String is " + selected);
                 setDoctorNameList(selected);
             }
@@ -83,6 +97,18 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
 
         buttonBookAppointment = findViewById(R.id.button_book_appointment);
         buttonBookAppointment.setOnClickListener(this);
+
+        Date = (EditText) findViewById(R.id.Date);
+        Time = (EditText) findViewById(R.id.time);
+
+        Venue = (EditText) findViewById(R.id.editText);
+        doc_aadhar = (EditText) findViewById(R.id.editText);
+        user_aadhar = (EditText) findViewById(R.id.editText);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
+
+
     }
 
     @Override
@@ -99,6 +125,7 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
     @Override
     public void onClick(View v) {
         if(v == buttonBookAppointment){
+            bookAppointment();
             finish(); // to close current activity
             toastMessage(this," Doctor Appointment Request Send");
             startActivity(new Intent(this,EmployeeMain.class));
@@ -143,6 +170,25 @@ public class EmployeeBookAppointment extends AppCompatActivity implements Adapte
 
             }
         });
+
+    }
+
+    private void bookAppointment() {
+
+        // String docType=spinner.getSelectedItem().toString();
+        String docName = spDocName.getSelectedItem().toString();
+        String date = Date.getText().toString();
+        String time = Time.getText().toString();
+        String dAdhar = doc_aadhar.getText().toString();
+        String uAdhar = user_aadhar.getText().toString();
+
+
+        EmployeeBookAppointmentClass employeeAppoinmentObj = new EmployeeBookAppointmentClass(docName, date, time, dAdhar, uAdhar);
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        final String formattedDate = df.format(c.getTime());
+        databaseReference.child("Appointments").child(formattedDate).setValue(employeeAppoinmentObj);
+
 
     }
 

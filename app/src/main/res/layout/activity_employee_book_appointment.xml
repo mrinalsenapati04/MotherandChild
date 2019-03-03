@@ -35,6 +35,20 @@
 
 
         <EditText
+            android:id="@+id/doc_aadhar"
+            style="@style/EditTextStyle"
+            android:hint="Doctor Aadhar Id"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/user_aadhar"
+            style="@style/EditTextStyle"
+            android:hint="User Aadhar Id"
+            android:inputType="text" />
+
+
+        <EditText
             android:id="@+id/Date"
             style="@style/EditTextStyle"
             android:hint="Date"
@@ -63,7 +77,6 @@
 
 
     </LinearLayout>
-
 
 
 </android.support.constraint.ConstraintLayout>

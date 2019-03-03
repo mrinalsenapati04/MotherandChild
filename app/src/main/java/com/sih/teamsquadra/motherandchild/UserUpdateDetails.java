@@ -2,8 +2,11 @@ package com.sih.teamsquadra.motherandchild;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,8 +15,13 @@ import android.widget.Toast;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class UserUpdateDetails extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +36,8 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
     private EditText editTextPhone;
     private EditText editTextPreviousHistory;
     private Button buttonUpdateDetailsDB;
+
+    private DatabaseReference db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +63,9 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
         editTextPreviousHistory = findViewById(R.id.edittext_user_previousHistory);
         buttonUpdateDetailsDB = findViewById(R.id.button_update_details_database);
         buttonUpdateDetailsDB.setOnClickListener(this);
+
+
+        // editTextAadhar.addT
     }
 
     private void saveUserInformation(){
@@ -65,9 +78,9 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
         String previousHistory = editTextPreviousHistory.getText().toString().trim();
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        //databaseReference.child(user.getUid()).setValue(user);
+        //databaseReference.child(user.getUid()).setValue(user)
 
-
+        // checkAadhar(aadhar);
         databaseReference.child(user.getUid()).child("type").setValue("user");
         databaseReference.child(user.getUid()).child("name").setValue(name);
         databaseReference.child(user.getUid()).child("address").setValue(address);
@@ -92,6 +105,70 @@ public class UserUpdateDetails extends AppCompatActivity implements View.OnClick
 
     private void toastMessage(Context context, String message){
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
+    }
+
+
+
+   /* private void checkAadhar(final String aadharId){
+        Log.v("UserUpdateDetails","here is aadhar" + aadharId);
+
+        DatabaseReference scoresRef = FirebaseDatabase.getInstance().getReference("AadharNumber");
+
+        Log.v("UserUpdateDetails","here is aadhar" + aadharId);
+
+        scoresRef.orderByValue().addChildEventListener(new ChildEventListener() {
+
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                Log.v("UserUpdateDetails","Here");
+                Log.v("UserUpdateDetails","The " + dataSnapshot.getKey() + " Aadhar Number  is " + dataSnapshot.getValue());
+
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        } );
+
+
+    }*/
+
+
+    private void checkAadhar(final String aadharId) {
+
+        Log.v("UserUpdateDetails", "Here");
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference clothingRef = rootRef.child("AadharNumbers");
+
+        ValueEventListener valueEventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Log.v("UserUpdateDetails", "Here");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        };
+
+
     }
 
 
